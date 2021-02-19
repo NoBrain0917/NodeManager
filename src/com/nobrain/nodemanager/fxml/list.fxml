@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62" prefWidth="130.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="name" layoutX="14.0" layoutY="28.0" prefHeight="27.0" prefWidth="117.0" text="index.js" textFill="#9594a4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="path" layoutX="14.0" layoutY="20.0" prefHeight="16.0" prefWidth="78.0" text="/main/" textFill="#9594a4">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="101.0" layoutY="19.0" mnemonicParsing="false">
+        <items>
+          <MenuItem id="delete" fx:id="delete" mnemonicParsing="false" text="Delete" />
+          <MenuItem fx:id="cmd" mnemonicParsing="false" text="Terminal" />
+        </items>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MenuButton>
+   </children>
+</Pane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="865.0" style="-fx-background-color: #181826;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nobrain.nodemanager.controllers.Controller">
+   <children>
+      <VBox layoutY="39.0" prefHeight="511.0" prefWidth="148.0" style="-fx-background-color: #212131;">
+         <children>
+            <Pane prefHeight="510.0" prefWidth="148.0">
+               <children>
+                  <ListView fx:id="listView" layoutY="10.0" onMouseClicked="#onListClick" prefHeight="485.0" prefWidth="148.0" style="-fx-background-color: #212131;" />
+               </children>
+            </Pane>
+         </children></VBox>
+      <VBox layoutX="-1.0" prefHeight="47.0" prefWidth="865.0" style="-fx-background-color: #212131;">
+         <children>
+            <Pane prefHeight="38.0" prefWidth="865.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="title" layoutX="38.0" layoutY="15.0" style="-fx-text-fill: linear-gradient(to right, #6242f8, #62e1ef);" text="Node Manager" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Button fx:id="file" layoutX="817.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#onFileClick" prefHeight="31.0" prefWidth="20.0">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/file.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="cancel" layoutX="783.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#onCancelClick" prefHeight="31.0" prefWidth="20.0">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="start" layoutX="749.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#onStartClick" prefHeight="31.0" prefWidth="20.0">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/start.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="refresh" layoutX="715.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onRefreshClick" prefHeight="31.0" prefWidth="20.0">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <VBox layoutX="148.0" layoutY="47.0" prefHeight="511.0" prefWidth="724.0">
+         <children>
+            <Pane prefHeight="519.0" prefWidth="724.0">
+               <children>
+                  <VBox id="test" layoutX="20.0" layoutY="21.0" prefHeight="444.0" prefWidth="676.0">
+                     <children>
+                        <ScrollPane prefWidth="200.0" style="-fx-background-color: transparent;">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+                               <Label fx:id="console" layoutX="10.0" layoutY="14.0" prefWidth="652.0" textFill="WHITE" wrapText="true">
+                                  <font>
+                                     <Font name="Consolas" size="14.0" />
+                                  </font>
+                                    <padding>
+                                       <Insets right="10.0" />
+                                    </padding>
+                               </Label>
+                            </AnchorPane>
+                          </content>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ScrollPane>
+                     </children></VBox>
+               </children>
+            </Pane>
+
+         </children>
+      </VBox>
+
+   </children>
+</AnchorPane>
